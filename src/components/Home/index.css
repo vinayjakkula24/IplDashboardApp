@@ -1,66 +1,73 @@
 /* Write your CSS here */
-.home-container {
+.home-route-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-
-  padding-top: 30px;
-  padding-bottom: 100px;
 }
-@media (min-width: 768px) {
-  .home-container {
+
+@media screen and (min-width: 768px) {
+  .home-route-container {
     background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
   }
 }
-.home-logo-heading-container {
+
+.teams-list-container {
+  width: 90%;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .teams-list-container {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+.ipl-dashboard-heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 13px;
-  max-width: 680px;
 }
+
 .ipl-logo {
+  width: 25px;
   height: 40px;
-  /* width: 40px; */
 }
-.home-page-heading {
+
+@media screen and (min-width: 768px) {
+  .ipl-logo {
+    width: 60px;
+    height: 96px;
+  }
+}
+
+.ipl-dashboard-heading {
   color: #ffffff;
-  font-family: 'Bree serif';
+  font-family: 'Bree Serif';
+  font-size: 36px;
+  margin-left: 12px;
 }
-@media (min-width: 576px) {
-  .home-page-heading {
-    font-size: 38px;
-  }
-  .ipl-logo {
-    height: 50px;
+
+@media screen and (min-width: 768px) {
+  .ipl-dashboard-heading {
+    font-size: 72px;
+    margin-left: 16px;
   }
 }
-@media (min-width: 768px) {
-  .home-page-heading {
-    font-size: 42px;
-  }
-  .ipl-logo {
-    height: 60px;
-  }
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 
 .teams-list {
-  padding: 0;
-  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-
-  max-width: 680px;
-}
-* {
-  /* border: 1px solid red; */
+  padding-left: 0px;
 }
